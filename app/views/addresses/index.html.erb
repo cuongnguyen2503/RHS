@@ -1,7 +1,13 @@
 <script type="text/javascript">
+  window._rails_env = "<%= Rails.env %>"
+
   var addresses = <%= @addresses.to_json.html_safe %>
   google.maps.event.addDomListener(window, "load", function(){
     gmap_show_addresses(addresses)});
 </script>
 
+
+<div id="map-canvas"></div>
 <%= render "shared/current_location" %>
+<%= render "shared/search" %>
+<input id="pac-input" class="controls" type="text">

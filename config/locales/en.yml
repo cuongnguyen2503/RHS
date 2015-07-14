@@ -23,6 +23,7 @@ en:
   hello: "Hello world"
   app_name: "Rental House System"
   login: "Login"
+  or: "or"
   register: "Register"
   home: "Home"
   back: "Back"
@@ -36,3 +37,14 @@ en:
   sign_in_with_google: "Sign in with google"
   api:
     local: "Your location"
+    search: "Search"
+    holder: "Enter address here"
+  address:
+    latitude: "Latitude"
+    longitude: "Longitude"
+    capacity: "Capacity"
+    contact: "Contact"
+    description: "Description"
+    new:
+      name: "Create New Address"
+      button: "Create New Address"

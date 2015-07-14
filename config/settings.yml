@@ -6,3 +6,6 @@ provider:
   facebook: "facebook"
   twitter: "twitter"
   linkedin: "linkedin"
+directional:
+  address:
+    new: "Create New Address"

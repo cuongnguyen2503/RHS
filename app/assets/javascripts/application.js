@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require googlemapapi
 //= require bootstrap
+//= require fancybox
+//= require gethost
+
+$(document).ready(function(){
+  $("#myModalName").html($("#new_address").data("name"));
+  var directional = $("#new_address").data("directional");
+  switch(directional){
+    case "new_address":
+      getElementById("new_address_view").style.display="block";
+  }
+});

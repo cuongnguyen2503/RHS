@@ -111,6 +111,8 @@ GEM
       railties (>= 3.0.0)
     faker (1.4.3)
       i18n (~> 0.5)
+    fancybox2-rails (0.2.8)
+      railties (>= 3.1.0, < 5.0)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.10)
@@ -142,7 +144,7 @@ GEM
     fog-atmos (0.1.0)
       fog-core
       fog-xml
-    fog-aws (0.7.2)
+    fog-aws (0.7.3)
       fog-core (~> 1.27)
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
@@ -225,7 +227,7 @@ GEM
       shellany (~> 0.0)
       thor (>= 0.18.1)
     guard-compat (1.2.1)
-    guard-rspec (4.6.0)
+    guard-rspec (4.6.1)
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
@@ -357,6 +359,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rdoc (4.2.0)
+      json (~> 1.4)
     remotipart (1.2.1)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
@@ -417,7 +420,7 @@ GEM
       raindrops (~> 0.7)
     warden (1.2.3)
       rack (>= 1.0)
-    web-console (2.1.3)
+    web-console (2.2.1)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
@@ -439,6 +442,7 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails
   faker
+  fancybox2-rails
   fog
   guard-rspec
   jbuilder (~> 2.0)
@@ -466,6 +470,3 @@ DEPENDENCIES
   uglifier
   unicorn
   web-console
-
-BUNDLED WITH
-   1.10.4

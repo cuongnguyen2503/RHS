@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :images
   mount RailsAdmin::Engine => "/admin", as: "rails_admin"
+  
   root "addresses#index"
 
   devise_for :users, class_name: "FormUser",

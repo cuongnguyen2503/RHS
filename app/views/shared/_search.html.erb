@@ -1,0 +1,7 @@
+<div id="search">
+  <%= form_tag("/search", method: "get") do %>
+    <%= text_field_tag "Search", nil, class: "search_field",
+      placeholder: t("api.holder") %>
+    <%= submit_tag t("api.search"), class: "search_button" %>
+  <% end %>
+</div>

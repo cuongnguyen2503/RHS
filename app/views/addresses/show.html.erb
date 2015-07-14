@@ -1,0 +1,7 @@
+<div class="address">
+  <h1><%= @address.description %></h1>
+  <% @images.each do |p| %>
+    <%= image_tag p.photo_url, :size => "150x150" %>
+    <%= link_to "Destroy", p, method: :delete %>
+  <% end %>  
+</div>

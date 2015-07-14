@@ -1,0 +1,40 @@
+<%= form_for @address, :html => {:multipart => true} do |f| %>
+  <div class="col-md-12 well">
+    <div class="col-md-12" style="display: none">
+      <%= f.label t "address.latitude" %>
+      <%= f.text_field :lat, class: "form-control", id: "form-lat" %>
+    </div>
+
+    <div class="col-md-12" style="display: none">
+      <%= f.label t "address.longitude" %><br/>
+      <%= f.text_field :lng, class: "form-control", id: "form-lng" %>
+    </div>
+
+    <div class="col-md-12">
+      <%= f.label t "address.capacity" %><br/>
+      <%= f.text_field :capacity, class: "form-control" %>
+    </div>
+
+    <div class="col-md-12">
+      <%= f.label t "address.contact" %><br/>
+      <%= f.text_field :contact, class: "form-control" %>
+    </div>
+
+    <div class="col-md-12">
+      <%= f.label t "address.description" %><br/>
+      <%= f.text_field :description, class: "form-control" %>
+    </div>
+  </div>
+  <div class="attachments">
+    <%= f.fields_for :images do |p| %>
+     <div class="field">
+       <%= p.label :photo %><br>
+       <%= p.file_field :photo, :multiple => true, name: "images[photo][]" %>
+     </div>
+    <% end %>    
+  </div>
+
+  <div class="col-md-12 well">
+    <%= f.submit t("address.new.button"), class: "btn btn-primary" %>
+  </div>
+<% end %>

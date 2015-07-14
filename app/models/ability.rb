@@ -7,7 +7,7 @@ class Ability
     if user.admin?
       can :manage, :all
     else
-      can :manage, [Address, Room], user_id: user.id
+      can :manage, [Address, Room, Review, Comment], user_id: user.id
       can :read, :all
     end
   end
