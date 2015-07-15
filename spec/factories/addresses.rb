@@ -9,6 +9,7 @@ FactoryGirl.define do
     rating {rand 1..5}
     title {Faker::Lorem.sentence}
     user
+    region
 
     after(:build) do |address|
       address.rooms << FactoryGirl.build(:room, address: address)

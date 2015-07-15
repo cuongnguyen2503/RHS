@@ -27,6 +27,7 @@ gem "rails_admin", github: "sferik/rails_admin"
 gem "fancybox2-rails"
 gem "bootstrap-social-rails"
 gem "font-awesome-rails"
+gem 'bootstrap-material-design'
 
 group :development, :test do
   gem "dotenv-rails"

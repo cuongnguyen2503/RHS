@@ -1,0 +1,13 @@
+<%= render "shared/advance_search_form" %>
+<h3><%= t "search.result" %></h3>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <% if @rooms.blank? %>
+      <%= t "search.no_data" %>
+    <% else %>
+      <%= render "searchs/sorting_search" %>
+      <%= render @rooms %>
+      <%= paginate @rooms %>
+    <% end %>
+  </div>
+</div>

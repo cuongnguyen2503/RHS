@@ -1,0 +1,61 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-sm-3">
+        <%= f.label :square %>
+        <%= f.collection_select :square_gteq, Settings.squares,
+          :last, :first, {include_blank: t("search.minmum")},
+          {class: "form-control", id: "min_square"} %></p>
+        <%= f.collection_select :square_lteq, Settings.squares,
+          :last, :first, {include_blank: t("search.maxmum")},
+          {class: "form-control", id: "max_square"} %>
+      </div>
+
+      <div class="col-sm-3">
+        <%= f.label :price %>
+        <%= f.collection_select :price_gteq, Settings.prices,
+          :last, :first, {include_blank: t("search.minmum")},
+          {class: "form-control", id: "min_price"} %></p>
+        <%= f.collection_select :price_lteq, Settings.prices,
+          :last, :first, {include_blank: t("search.maxmum")},
+          {class: "form-control", id: "max_price"} %>
+      </div>
+
+      <div class="col-sm-3">
+        <%= f.label :facility %>
+        <%= f.collection_select :facility_gteq, Settings.facilities,
+          :last, :last, {include_blank: t("search.minmum")},
+          {class: "form-control", id: "min_facility"} %></p>
+        <%= f.collection_select :facility_lteq, Settings.facilities,
+          :last, :last, {include_blank: t("search.maxmum")},
+          {class: "form-control", id: "max_facility"} %>
+      </div>
+
+      <div class="col-sm-3">
+        <%= f.label :address_region_province %>
+        <%= f.collection_select :address_region_province_cont, Settings.locations,
+          :last, :last, {include_blank: t("search.region")},
+          {class: "form-control", id: "address"} %>
+        
+       
+        <div class="col-xs-6">  
+          </p><%= f.check_box :parking_in, {class: "checkbox", id: "park1"}, 1, nil %>
+          <div id="park"><%= f.label :park %></div>
+        </div>
+
+        <div class="col-xs-6">
+          </p><%= f.check_box :parking_in, {class: "checkbox", id: "park2"}, 0, nil %>
+          <div id="none"><%= f.label :none %></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-mid">
+      </p><%= f.text_field :address_title_cont, {placeholder: t("search.title"),
+        class: "form-control", id: "title"} %></p>
+      <div class="ad_search">
+        <%= f.submit t("api.search"), {class: "btn btn-info btn-block"} %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20150720092712) do
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.string   "title",       limit: 255
+    t.integer  "region_id",   limit: 4
   end
 
   add_index "addresses", ["user_id"], name: "index_addresses_on_user_id", using: :btree
@@ -108,6 +109,12 @@ ActiveRecord::Schema.define(version: 20150720092712) do
   end
 
   add_index "rating_caches", ["cacheable_id", "cacheable_type"], name: "index_rating_caches_on_cacheable_id_and_cacheable_type", using: :btree
+
+  create_table "regions", force: :cascade do |t|
+    t.string   "province",   limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "reviews", force: :cascade do |t|
     t.string   "content",    limit: 255

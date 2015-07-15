@@ -6,7 +6,9 @@ namespace :db do
     puts "Create admin user"
     FactoryGirl.create :admin
 
-    puts "Create 40 addresses and everythings relate"
-    40.times {FactoryGirl.create :address}
+    puts "Create region and everyting relative"
+    Settings.locations.each do |location|
+      FactoryGirl.create :region, province: location.last
+    end
   end
 end

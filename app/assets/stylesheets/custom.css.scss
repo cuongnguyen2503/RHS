@@ -241,6 +241,9 @@ html, body{
     .contact {
       color: #666;
     }
+    .province_city {
+      color: #666;
+    }
     .title {
       font-size: 22px;
       color: #333;
@@ -523,4 +526,30 @@ legend {
 
 #fa-usd {
   margin-left: 5px;
+}
+
+select.form-control{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 25px;
+  padding: 2px;
+  background: url(arrow.png) no-repeat right;
+  background-position: static;
+  background-size: 25px 25px;
+}
+
+#park1, #park2{
+  position: absolute;
+  right: 55px;
+  display: block;
+}
+
+#park, #none{
+ position: absolute;
+ left: 25px; 
+}
+
+#title, #search{
+  height: 27px;
 }

@@ -16,3 +16,152 @@ image_sample:
 user:
   avatar_default: "avatar_default.jpg"  
 num_of_recent_addresses: 10
+pages:
+  ten: 10
+locations:
+  bacgiang: "Bac Giang"
+  backan: "Bac Kan"
+  caobang: "Cao Bang"
+  hagian: "Ha Giang"
+  langsong: "Lang Son"
+  phutho: "Phu Tho"
+  quangninh: "Quang Ninh"
+  thainguyen: "Thai Nguyen"
+  tuyenquang: "Tuyen Quang"
+  laocai: "Lao Cai"
+  yenbai: "Yen Bai"
+  dienbien: "Dien Bien"
+  hoabinh: "Hoa Binh"
+  laichau: "Lai Chau"
+  sonla: "Son La"
+  bacninh: "Bac Ninh"
+  hanam: "Ha Nam"
+  haiduong: "Hai Duong"
+  hungyen: "Hung Yen"
+  namdinh: "Nam Dinh"
+  ninhbinh: "Ninh Binh"
+  thaibinh: "Thai Binh"
+  vinhphuc: "Vinh Phuc"
+  hanoi: "Ha Noi"
+  haiphong: "Ha Phong"
+  hatinh: "Ha Tinh"
+  nghean: "Nghe An"
+  quangbinh: "Quang Binh"
+  quangtri: "Quang Tri"
+  thanhhoa: "Thanh Hoa"
+  hue: "Hue"
+  daknong: "Dak Nong"
+  gialai: "Gia Lai"
+  kontum: "Kon Tum"
+  lamdong: "Lam Dong"
+  binhdinh: "binhdinh"
+  binhthuan: "Binh Thuan"
+  khanhhoa: "Khanh Hoa"
+  ninhhthuan: "Ninh Thuan"
+  phuyen: "Phu Yen"
+  quangnam: "Quang Nam"
+  quangngai: "Quang Ngai"
+  danang: "Da Nang"
+  baria: "Ba Ria"
+  binhduong: "Binh Duong"
+  binhphuoc: "Binh Phuong"
+  dongnai: "Dong Nai"
+  tayninh: "Tay Ninh"
+  HCM: "HCM"
+  angiang: "An Giang"
+  baclieu: "Bac Lieu"
+  bentre: "Ben Tre"
+  camau: "Ca Mau"
+  dongthap: "Dong Thap"
+  haugiang: "Hau Giang"
+  kiengiang: "Kien Giang"
+  longan: "Long An"
+  soctrang: "Soc Trang"
+  tiengiang: "Tien Giang"
+  travinh: "Tra Vinh"
+  vinhlong: "Vinh Long"
+  cantho: "Can Tho"
+  vinh: "Vinh"
+prices:
+  0: 0
+  1.M: 1000000
+  2.M: 2000000
+  3.M: 3000000
+  4.M: 4000000
+  5.M: 5000000
+  6.M: 6000000
+  7.M: 7000000
+  8.M: 8000000
+  9.M: 9000000
+  10.M: 10000000
+  20.M: 20000000
+  30.M: 30000000
+  40.M: 40000000
+  50.M: 50000000
+  60.M: 60000000
+  70.M: 70000000
+  80.M: 80000000
+  90.M: 90000000
+  100.M: 100000000
+squares:
+  0m: 0
+  5m: 5
+  10m: 10
+  15m: 15
+  20m: 20
+  25m: 25
+  30m: 30
+  35m: 35
+  40m: 40
+  45m: 45
+  50m: 50
+  55m: 55
+  60m: 60
+  65m: 65
+  70m: 70
+  75m: 75
+  80m: 80
+  85m: 85
+  90m: 90
+  100m: 100
+facilities: 
+  1: 1
+  2: 2
+  3: 3
+  4: 4
+  5: 5
+  6: 6
+  7: 7
+  8: 8
+  9: 9
+  10: 10
+  11: 11
+  12: 12
+  13: 13
+  14: 14
+  15: 15
+  16: 16
+  17: 17
+  18: 18
+  19: 19
+  20: 20
+  21: 21
+  22: 22
+  23: 23
+  24: 24
+  25: 25
+  26: 26
+  27: 27
+  28: 28
+  29: 29
+  30: 30
+  31: 31
+  32: 32
+  33: 33
+  34: 34
+  35: 35
+  36: 36
+  37: 37
+  38: 38
+  39: 39
+  40: 40

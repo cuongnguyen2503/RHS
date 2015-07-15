@@ -1,0 +1,46 @@
+<div class="address">
+  <div class="address-thumb">
+    <% if room.address.images.first.present? %>
+      <%= image_tag room.address.images.first.photo.small_thumb.url %>
+    <% else %>
+      <%= image_tag "house-thumb.jpg" %>
+    <% end %>
+    <div class="address-id">
+      <%= t "search.range" %>
+      <%= room.address.id %>
+    </div>
+  </div>
+  <div class="address-details">
+    <div class="title">
+      <%= link_to room.address.title, address_path(room.address),
+        title: "#{room.address.title}" %>
+    </div>
+    <p>
+      <%= room.address.address %> | 
+      <span class="fa fa-square-o">
+        <%= t "square" %>
+        <span class="num-info">
+          <%= room.square %> 
+        </span>
+      </span> |
+      <%= t "price" %>
+      <span class="fa fa-usd">
+        <span class="num-info">
+          <%= room.simplify_price %> 
+        </span> 
+      </span>
+    </p>
+    <p>
+      <%= t "capacity" %>: <span class="capacity"><%= room.address.capacity %>
+      </span> |
+      <%= t "contact" %>: <span class="contact"><%= room.address.contact %>
+      </span> | <%= t "province_city" %>:
+        <span class="province_city"><%= room.address.region.province %></span>
+    </p>
+    <div>
+      <span class="right">
+        <%= room.address.created_at.to_date.to_formatted_s(:long_ordinal) %>
+      </span>
+    </div>
+  </div>
+</div>

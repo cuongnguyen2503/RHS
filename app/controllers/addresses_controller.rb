@@ -6,6 +6,7 @@ class AddressesController < ApplicationController
     @addresses = Address.all.page params[:page]
     @address = Address.new
     @recent_addresses = Address.last Settings.num_of_recent_addresses
+    @search = Room.search params[:q]
   end
 
   def show
